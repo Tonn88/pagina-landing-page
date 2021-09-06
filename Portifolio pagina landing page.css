@@ -1,0 +1,103 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Saira Extra Condensed", sans-serif;
+}
+
+html, body{
+    height: 100%;
+}
+
+.parent{
+    display: flex;
+}
+
+.sidebar{
+    width: 20%;
+    height: 100%;
+    position: fixed;
+    background-color: rgb(252, 164, 32);
+}
+
+.sidebar-pos{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+
+}
+
+.img-sidebar{text-align: center;}
+
+.img-sidebar img{
+    width: 80%;
+    height: 40%;
+    border: 15px solid rgb(230, 168, 75);
+    border-radius: 50%;
+}
+.menu{
+    margin: 20px 0;
+    text-align: center;
+    
+}
+
+.menu a{
+    color: cornsilk;
+    opacity: 0.5;
+    font-size: 20px;
+    display: block;
+    margin-bottom: 20px;
+    text-decoration: none;
+
+}
+
+.menu a{
+    opacity: 1;
+}
+
+/*Caso não complete poderia ser que estivesse faltando "position:absolute ou relative, então seria necessario compensar o width"*/
+/*overflow pra funcionar em dispositivos mobile*/
+.content{
+    position: absolute;
+    left: 20%;
+    width: 80%;
+    height: 300%;
+    background: rgb(248, 181, 81);
+    overflow-y: auto;
+    padding: 0 5%;
+}
+
+.icons-social img{
+    width: 8%;
+    height: 8%;
+    border: 10px solid rgb(248, 181, 81);
+    border-radius: 10%;
+    margin: 5px;
+    
+}
+
+section.descricao{
+    position: relative;
+    top: 10%;
+    transform: translateY(-10);
+}
+
+section.descricao h2{
+    color: rgb(70, 65, 65);
+    font-size: 50px;
+    
+}
+section.descricao h3{
+    color: rgb(170, 39, 164);
+    font-size: 20;
+}
+
+section.descricao p{
+    color: rgb(70, 65, 65);
+    font-size: 18;
+    margin-top: 10px;
+}
+
+
+
+
